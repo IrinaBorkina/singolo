@@ -1,0 +1,91 @@
+@import './fonts.css';
+
+
+body {
+    background: #f2f2f2;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+.header {
+    background-color: #2d303a;
+    color: #fff;
+    font-family: 'Lato Bold', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 29px 0 36px;
+    margin: 0 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 25px;
+    letter-spacing: -0.8px;
+}
+
+.logo a span {
+    color: #d6645e;
+}
+
+.nav-block {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3px;
+}
+
+.nav-list {
+    display: flex;
+    letter-spacing: -0.45px;
+}
+
+.nav-list__item {
+    list-style: none;
+    font-size: 12px;
+    position: relative;
+}
+
+.nav-list__item a:hover {
+    color: #d6645e;
+}
+
+.nav-list__item + .nav-list__item {
+    margin-left: 32px;
+}
+
+.nav-list__item + .nav-list__item::before {
+    content: "";
+    height: 3px;
+    width: 3px;
+    background: #494e62;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: -15px; 
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ----------------- */
