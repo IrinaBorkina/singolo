@@ -16,6 +16,24 @@ body {
     margin: 0 auto;
 }
 
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title {
+    font-family: 'Lato Black', sans-serif;
+    color: #666d89;
+}
+
+.text {
+    color: #767e9e;
+}
+
+.text-spacing {
+    letter-spacing: -0.2px;
+}
+
 
 /* header */
 
@@ -80,11 +98,6 @@ body {
     position: absolute;
     top: 6px;
     left: -15px; 
-}
-
-.link {
-    text-decoration: none;
-    color: inherit;
 }
 
 
@@ -196,3 +209,102 @@ body {
 #img_3:checked ~ #arrow_prev label:nth-child(2) {
     visibility: visible;
 }
+
+
+
+/* --- services section --- */
+
+.services {
+    background: linear-gradient(#f2f2f2 0%, #f2f2f2 98.8%, #fff 98.8%, #fff 100%);
+    padding: 60px 0 66px;
+}
+
+.services-block {
+    margin: 0 40px;
+}
+
+.services-title {
+    margin-bottom: 40px;
+}
+
+.services-title__title {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.services-title__text {
+    font-family: 'Lato Light', sans-serif;
+    font-size: 18px;
+    line-height: 1.65;
+    letter-spacing: -0.045px;
+}
+
+.services-title__text span {
+    letter-spacing: -0.3px;
+}
+
+.services-title__text span:last-child {
+    letter-spacing: -0.2px;
+}
+
+.services-advantages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px 20px;
+}
+
+
+.services-advantages-item {
+    display: flex;
+    padding: 2px 0 0;
+}
+
+.advantages-image {
+    border: 2px solid #6e748f;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin-top: 5px;
+}
+
+.icon-1 {
+    background: url('./assets/images/pen.svg') no-repeat 50% 50%;
+}
+
+.icon-2 {
+    background: url('./assets/images/bulb.svg') no-repeat 50% 50%;
+}
+
+.icon-3 {
+    background: url('./assets/images/heart.svg') no-repeat 50% 50%;
+}
+
+.icon-4 {
+    background: url('./assets/images/phone.svg') no-repeat 50% 50%;
+}
+
+.icon-5 {
+    background: url('./assets/images/bubble.svg') no-repeat 50% 50%;
+}
+
+.icon-6 {
+    background: url('./assets/images/star.svg') no-repeat 50% 50%;
+}
+
+.advantages-desc {
+    margin-left: 20px;
+    max-width: 220px;
+}
+
+.advantages-desc__title {
+    margin-bottom: 8px;
+    letter-spacing: -0.35px;
+}
+
+.advantages-desc__text {
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
