@@ -20,7 +20,7 @@ body {
 /* header */
 
 .header {
-    background-color: #2d303a;
+    background: linear-gradient(#2d303a 0%, #2d303a 93%, #323746 93%, #323746 100%);
     color: #fff;
     font-family: 'Lato Bold', sans-serif;
 }
@@ -88,4 +88,111 @@ body {
 }
 
 
-/* ----------------- */
+/* --- slider --- */
+
+.slider {
+    background: linear-gradient(#d6645e 0%, #d6645e 99%, #ea676b 99%, #ea676b 100%);
+    padding: 40px 0 50px;
+}
+
+
+.slider-container {
+    position: relative;
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 50%;
+}
+
+
+.slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slides div {
+    display: flex;
+    align-items: center;
+}
+
+.slides div img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#third div:last-child {
+    transform: rotate(-90deg);
+}
+
+
+.slide_img {
+    display: none;
+}
+
+
+#arrow_next label,
+#arrow_prev label {
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+    top: 47.5%;
+}
+
+#arrow_prev label {
+    left: -35px;
+}
+
+#arrow_next label {
+    right: -35px;
+}
+
+.arrow {
+    border: solid rgba(0, 0, 0, .4);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 0 4px 4px 0;
+}
+
+.arrow:hover {
+    border: solid rgba(0, 0, 0, .8);
+    border-width: 0 5px 5px 0;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.switchers {
+    display: none;
+}
+
+
+#img_1:checked ~ #first,
+#img_2:checked ~ #second,
+#img_3:checked ~ #third {
+    visibility: visible;
+}
+
+
+#img_1:checked ~ #arrow_next label:nth-child(2),
+#img_2:checked ~ #arrow_next label:nth-child(3),
+#img_3:checked ~ #arrow_next label:nth-child(1) {
+    visibility: visible;
+}
+
+#img_1:checked ~ #arrow_prev label:nth-child(3),
+#img_2:checked ~ #arrow_prev label:nth-child(1),
+#img_3:checked ~ #arrow_prev label:nth-child(2) {
+    visibility: visible;
+}
