@@ -179,3 +179,134 @@ body {
 }
 
 
+
+/* --- about section --- */
+
+.about {
+    padding: 60px 0 70px;
+}
+
+.about-container {
+    margin: 0 40px;
+}
+
+
+.about-title {
+    margin-bottom: 44px;
+}
+
+.about-title__title {
+    font-size: 30px;
+    margin-bottom: 19px;
+    color: #666d89;
+}
+
+.about-title__text {
+    font-family: 'Lato Light', sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.05px;
+    color: #767e9e;
+    line-height: 1.65;
+}
+
+.team-block {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 20px;
+}
+
+.team-block__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-block__image {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.photo1 {
+    background: url('./assets/images/photo1.png') no-repeat;
+    background-position: 50% 50%;
+}
+
+.photo2 {
+    background: url('./assets/images/photo2.png') no-repeat;
+    background-position: 50% 50%;
+}
+
+.photo3 {
+    background: url('./assets/images/photo3.png') no-repeat;
+    background-position: 50% 50%;
+}
+
+
+.team-block__title {
+    margin-bottom: 24px;
+}
+
+.team-title__title {
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+.team-title__text {
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 12px;
+    line-height: 1.75;
+    text-align: justify;
+}
+
+
+.social-list{
+    display: flex;
+}
+
+.social-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 1px solid #727892;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+
+.social-list__item + .social-list__item {
+    margin-left: 8px;
+}
+
+
+.social-list__item:hover {
+    background: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.link1 {
+    background: url('./assets/images/facebook.svg') no-repeat;
+}
+
+.link2 {
+    background: url('./assets/images/google+.svg') no-repeat;
+}
+
+.link3 {
+    background: url('./assets/images/twitter.svg') no-repeat;
+}
+
+.link4 {
+    background: url('./assets/images/linkedin.svg') no-repeat;
+}
+
+
+.icon-link {
+    width: 30px;
+    height: 30px;
+    background-position: 50%;
+}
+
