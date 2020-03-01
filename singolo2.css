@@ -16,10 +16,6 @@ body {
     margin: 0 auto;
 }
 
-.link {
-    text-decoration: none;
-    color: inherit;
-}
 
 .title {
     font-family: 'Lato Black', sans-serif;
@@ -27,21 +23,12 @@ body {
     font-weight: 900;
 }
 
-.text {
-    color: #767e9e;
-}
-
-.text-spacing {
-    letter-spacing: -0.2px;
-}
-
-
 
 /* --- portfolio section --- */
 
 .portfolio {
-    background: #2d303a;
-    padding: 60px 0 74px;
+    padding: 60px 0 73px;
+    background: linear-gradient(#2d303a 0%, #2d303a 99.2%, #323746 99.2%, #323746 100%);
 }
 
 .portfolio-container {
@@ -68,7 +55,7 @@ body {
 
 
 .filter-block {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
 }
 
 .filter-block__button {
@@ -184,6 +171,7 @@ body {
 
 .about {
     padding: 60px 0 70px;
+    background: linear-gradient(#f2f2f2 0%, #f2f2f2 99.8%, #fff 99.8%, #fff 100%);
 }
 
 .about-container {
@@ -209,6 +197,22 @@ body {
     line-height: 1.65;
 }
 
+.team-block:first-child .team-title__text {
+    letter-spacing: -0.15px;
+}
+
+.first-span {
+    letter-spacing: -0.4px;
+}
+
+.second-span {
+    letter-spacing: -0.25px;
+}
+
+.third-span {
+    letter-spacing: -0.1px;
+}
+
 .team-block {
     display: grid;
     grid-template-columns: repeat(3, 300px);
@@ -228,17 +232,14 @@ body {
 
 .photo1 {
     background: url('./assets/images/photo1.png') no-repeat;
-    background-position: 50% 50%;
 }
 
 .photo2 {
     background: url('./assets/images/photo2.png') no-repeat;
-    background-position: 50% 50%;
 }
 
 .photo3 {
     background: url('./assets/images/photo3.png') no-repeat;
-    background-position: 50% 50%;
 }
 
 
@@ -251,15 +252,29 @@ body {
     margin-bottom: 9px;
 }
 
+.second-title {
+    letter-spacing: -0.25px;
+}
+
 .team-title__text {
     font-family: 'Lato Regular', sans-serif;
     font-size: 12px;
     line-height: 1.75;
     text-align: justify;
+    color: #767e9e;
 }
 
 
-.social-list{
+.first {
+    letter-spacing: -0.15px;
+}
+
+.first span {
+    letter-spacing: 0;
+}
+
+
+.social-list {
     display: flex;
 }
 
