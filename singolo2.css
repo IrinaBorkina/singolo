@@ -92,6 +92,8 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 220px);
     grid-gap: 20px;
+    height: 601px;
+    overflow: hidden;
 }
 
 .portfolio-block__item {
@@ -250,6 +252,8 @@ body {
 .team-title__title {
     font-size: 18px;
     margin-bottom: 9px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .second-title {
