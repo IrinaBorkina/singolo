@@ -174,3 +174,77 @@ textarea::placeholder {
     background: url('./assets/images/mail.svg') no-repeat;
 }
 
+
+/* --- footer --- */
+
+.footer {
+    background: #2d303a
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0 21px;
+    margin: 0 40px;
+}
+
+
+.footer-copyright {
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 12px;
+    padding-top: 8px;
+    color: #666D89;
+}
+
+
+.social-list {
+    display: flex;
+}
+
+.social-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 1px solid #727892;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+
+.social-list__item + .social-list__item {
+    margin-left: 8px;
+}
+
+
+.social-list__item:hover {
+    background: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.link1 {
+    background: url('./assets/images/facebook.svg') no-repeat;
+}
+
+.link2 {
+    background: url('./assets/images/google+.svg') no-repeat;
+}
+
+.link3 {
+    background: url('./assets/images/twitter.svg') no-repeat;
+}
+
+.link4 {
+    background: url('./assets/images/linkedin.svg') no-repeat;
+}
+
+
+.icon-link {
+    width: 30px;
+    height: 30px;
+    background-position: 50%;
+}
+
