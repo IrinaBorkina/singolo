@@ -30,10 +30,7 @@ body {
 
 
 .form {
-    /* background: #f06c64;
-    ea676b */
     background: linear-gradient(#f06c64 0%, #f06c64 99%, #ea676b 99%, #ea676b 100%);
-
 }
 
 
@@ -111,9 +108,16 @@ textarea::placeholder {
     font-family: 'Lato Regular', sans-serif;
     color: #f48c8f;
     font-size: 12px;
-
 }
 
+
+input:focus:invalid {
+    outline: 2px dashed red;
+}
+
+input:focus:valid {
+outline: 2px solid black;
+}
 
 .form-button {
     background: #D6564F;
@@ -127,7 +131,7 @@ textarea::placeholder {
     cursor: pointer;
 }
 
-.button:hover {
+.form-button:hover {
     background: rgb(184, 76, 71);
 }
 
@@ -159,6 +163,10 @@ textarea::placeholder {
     margin-bottom: 7.5px;
     padding-left: 23px;
     letter-spacing: -0.15px;
+}
+
+.contact-list__item + .contact-list__item:hover {
+    color: #e2bfc0;
 }
 
 
