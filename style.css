@@ -1,5 +1,4 @@
 @import './fonts.css';
-@import './normalize';
 
 
 body {
@@ -312,6 +311,8 @@ body {
     font-size: 12px;
     text-align: justify;
     line-height: 1.8;
+    height: 65px;
+    overflow: hidden;
 }
 
 
@@ -558,9 +559,6 @@ body {
     line-height: 1.75;
     text-align: justify;
     color: #767e9e;
-    /* white-space: nowrap; */
-    /* overflow: hidden; */
-
 }
 
 
@@ -636,7 +634,7 @@ body {
 .form-container {
     color: #f0d8d9;
     margin: 0 40px;
-    padding: 59px 0 74px;
+    padding: 59px 0 15px;
 }
 
 .form-title {
@@ -682,7 +680,7 @@ form {
 }
 
 input {
-    padding: 12px 15px;
+    padding: 11px 15px;
     margin-bottom: 17px;
     background: #D6564F;
     border-radius: 5px;
@@ -698,6 +696,7 @@ textarea {
     color: #f48c8f;
     margin-bottom: 20px;
     min-height: 182px;
+    resize: none;
 }
 
 input::placeholder,
