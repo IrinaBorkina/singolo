@@ -223,7 +223,7 @@ body {
 
 .services {
     background: linear-gradient(#f2f2f2 0%, #f2f2f2 98.8%, #fff 98.8%, #fff 100%);
-    padding: 60px 0 67px;
+    padding: 60px 0 68px;
 }
 
 .services-block {
@@ -262,7 +262,7 @@ body {
 
 .services-advantages-item {
     display: flex;
-    padding: 2px 0 0;
+    padding: 4px 0 0;
 }
 
 .advantages-image {
@@ -682,8 +682,8 @@ form {
 }
 
 input {
-    padding: 11px 15px;
-    margin-bottom: 16px;
+    padding: 12px 15px;
+    margin-bottom: 17px;
     background: #D6564F;
     border-radius: 5px;
     border: none;
@@ -744,14 +744,14 @@ input:focus:invalid {
 
 .contact-title__text {
     line-height: 22px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     letter-spacing: -0.05px;
     text-align: justify;
 }
 
 .contact-list__item {
     list-style: none;
-    margin-bottom: 7.5px;
+    margin-bottom: 7px;
     padding-left: 23px;
     letter-spacing: -0.15px;
 }
