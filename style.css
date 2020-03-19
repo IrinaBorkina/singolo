@@ -409,6 +409,12 @@ body {
     cursor: pointer;
 }
 
+.portfolio-block__item--active {
+    border: 5px solid #F06C64;
+    box-sizing: border-box;
+    outline: none;
+}
+
 .image1 {
     background: url('./assets/images/image1.png') no-repeat;
     background-position: 45% 21%;
