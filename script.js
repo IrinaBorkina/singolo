@@ -153,4 +153,26 @@ const multiItemSlider = (function () {
 const slider = multiItemSlider('.slider')
 
 
+// dark screen phone
+
+const PHONE = document.querySelector('.slider__wrapper');
+const PHONE_IMG = document.querySelectorAll('.phone-img');
+
+
+PHONE.addEventListener('click', (e) => {
+    PHONE_IMG.forEach(() => {
+        if (e.target.classList.contains("phone-img")) {
+            if (e.target.nextElementSibling.classList.contains("screen")) {
+                e.target.nextElementSibling.classList.remove("screen");
+            } else {
+                e.target.nextElementSibling.classList.add("screen");
+            }
+        } else {
+            if (e.target.classList.contains("image__screen")) {
+
+                e.target.classList.add("screen");
+            }
+        }
+    });
+})
 

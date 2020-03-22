@@ -162,6 +162,10 @@ body {
     left: 315px;
 }
 
+.slides-item__img {
+    cursor: pointer;
+}
+
 .image__screen {
     position: absolute;
     transform: translate(calc(-50%), calc(-50% + 2px));
@@ -171,6 +175,7 @@ body {
     background-color: #2D303A;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 .screen1 {
@@ -387,7 +392,6 @@ body {
 .filter-block__button--active {
     border: 1px solid #c5c5c5;
     color: #c5c5c5;
-    outline: none;
     padding: 2.5px 7px;
 }
 
