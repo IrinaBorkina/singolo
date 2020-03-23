@@ -19,8 +19,8 @@
 
                 <div class="nav-block">
                     <ul class="nav-list">
-                        <li class="nav-list__item nav-list__item--active"><a href="#"
-                                class="nav-list__link link">HOME</a></li>
+                        <li class="nav-list__item"><a href="#home"
+                                class="nav-list__link link nav-list__item--active">HOME</a></li>
                         <li class="nav-list__item"><a href="#services" class="nav-list__link link">SERVICES</a></li>
                         <li class="nav-list__item"><a href="#portfolio" class="nav-list__link link">PORTFOLIO</a></li>
                         <li class="nav-list__item"><a href="#about" class="nav-list__link link">ABOUT</a></li>
@@ -34,7 +34,7 @@
 
     <main class="main">
 
-        <section class="slider-section">
+        <section class="slider-section" id="home">
             <div class="container">
 
                 <div class="slider">
@@ -160,7 +160,7 @@
                     </div>
 
                     <div class="filter-block">
-                        <button class="filter-block__button button filter-block__button--active">All</button>
+                        <button class="filter-block__button button filter-block__button--active active">All</button>
                         <button class="filter-block__button button">Web Design</button>
                         <button class="filter-block__button button">Graphic Design</button>
                         <button class="filter-block__button button">Artwork</button>
@@ -281,11 +281,11 @@
                     </div>
 
                     <div class="form-block">
-                        <form class="form-submit" action="">
-                            <input type="name" name="name" minlength="2" maxlength="50" placeholder="Name (required)" required>
+                        <form class="form-submit">
+                            <input type="text" name="name" minlength="2" maxlength="50" placeholder="Name (required)" required>
                             <input type="email" name="email" placeholder="Email (required)" required>
                             <input class="form-subject" type="text" name="subject" maxlength="100" placeholder="Subject">
-                            <textarea class="form-message" name="message" maxlength="500" id="" placeholder="Describe your project in detail..."></textarea>
+                            <textarea class="form-message" name="message" maxlength="500" placeholder="Describe your project in detail..."></textarea>
                             <button type="submit" class="form-button">Submit</button>
                         </form>
 

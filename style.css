@@ -165,6 +165,7 @@ body {
 
 .slides-item__img {
     cursor: pointer;
+    border-radius: 26px;
 }
 
 .image__screen {
@@ -393,6 +394,9 @@ body {
 .filter-block__button--active {
     border: 1px solid #c5c5c5;
     color: #c5c5c5;
+}
+
+.active {
     padding: 2.5px 7px;
 }
 

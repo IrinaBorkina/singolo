@@ -38,6 +38,6 @@ export class Filter {
         this.PORTFOLIO_ARRAY = this.PORTFOLIO.querySelectorAll('.portfolio-block__item')
 
         this.FILTER.addEventListener('click', this.filterImage.bind(this));
-        this.PORTFOLIO.addEventListener('click', this.isActiveButton.bind(this))
+        this.PORTFOLIO.addEventListener('click', this.isActiveButton.bind(this));
     }
 }
