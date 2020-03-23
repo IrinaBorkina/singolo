@@ -56,7 +56,7 @@
                         <div class="slider__item">
                             <div class="slides">
                                 <div class="slides-item">
-                                    <img class="slides-item__img" src="./assets/images/slide2.png" alt="">
+                                    <img src="./assets/images/slide2.png" alt="">
                                 </div>
                                 <div class="slides-item position-phone">
                                     <img class="slides-item__img phone-img img3" src="./assets/images/phone.png" alt="">
@@ -270,7 +270,6 @@
 
         <section class="form" id="contact">
             <div class="container">
-
                 <div class="form-container">
                     <div class="form-title">
                         <h2 class="form-title__title title">Get a Quote</h2>
@@ -282,11 +281,11 @@
                     </div>
 
                     <div class="form-block">
-                        <form action="">
-                            <input type="name" placeholder="Name (required)" required>
-                            <input type="email" placeholder="Email (required)" required>
-                            <input type="text" placeholder="Subject">
-                            <textarea name="" id="" placeholder="Describe your project in detail..."></textarea>
+                        <form class="form-submit" action="">
+                            <input type="name" name="name" minlength="2" maxlength="50" placeholder="Name (required)" required>
+                            <input type="email" name="email" placeholder="Email (required)" required>
+                            <input class="form-subject" type="text" name="subject" maxlength="100" placeholder="Subject">
+                            <textarea class="form-message" name="message" maxlength="500" id="" placeholder="Describe your project in detail..."></textarea>
                             <button type="submit" class="form-button">Submit</button>
                         </form>
 
@@ -308,12 +307,32 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-        </section>
 
+
+            <div class="modal" tabindex="0">
+                <div class="modal-container">
+                    <div class="modal__screen">
+                        <div class="modal__header">
+                            <h3 class="modal__title">The letter was sent</h3>
+                        </div>
+                        <div class="modal__subject-wrapper">
+                            <h4 class="modal__subject-title">Subject:</h4>
+                            <p class="modal__subject"></p>
+                        </div>
+                        <div class="modal__description-wrapper">
+                            <h4 class="modal__description-title">Description:</h4>
+                            <p class="modal__description"></p>
+                        </div>
+                        <div class="modal__control-wrapper">
+                            <button type="button" class="modal__button">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
     </main>
 

@@ -176,3 +176,50 @@ PHONE.addEventListener('click', (e) => {
     });
 })
 
+
+
+// form submit
+
+const FORM = document.querySelector('.form-submit');
+const MODAL_WINDOW = document.querySelector('.modal');
+const MODAL_SUBJECT = MODAL_WINDOW.querySelector('.modal__subject');
+const MODAL_MESSAGE = MODAL_WINDOW.querySelector('.modal__description');
+
+const FORM_SUBJECT = FORM.querySelector('.form-subject');
+const FORM_MESSAGE = FORM.querySelector('.form-message');
+
+const MODAL_SUBJECT_CAPTION = MODAL_WINDOW.querySelector('.modal__subject-title');
+const MODAL_MESSAGE_CAPTION = MODAL_WINDOW.querySelector('.modal__description-title');
+
+const FORM_BUTTON = document.querySelector('.form-button');
+
+
+const sendForm = () => {
+    const modalClickEvent = event => {
+        const target = event.target;
+        const isTargetButton = target.classList.contains('modal__button');
+
+        if (isTargetButton) {
+            MODAL_WINDOW.classList.remove('modal--open');
+            MODAL_WINDOW.removeEventListener('click', modalClickEvent);
+            FORM.reset();
+        }
+    }
+
+    FORM.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        MODAL_SUBJECT_CAPTION.innerText = FORM_SUBJECT.value === '' ? 'No subject' : 'Subject:';
+        MODAL_MESSAGE_CAPTION.innerText = FORM_MESSAGE.value === '' ? 'No description' : 'Description:';
+
+        MODAL_SUBJECT.innerText = FORM_SUBJECT.value;
+        MODAL_MESSAGE.innerText = FORM_MESSAGE.value;
+
+        MODAL_WINDOW.addEventListener('click', modalClickEvent);
+        MODAL_WINDOW.classList.add('modal--open');
+    });
+}
+
+
+FORM_BUTTON.addEventListener('click', sendForm);
+
